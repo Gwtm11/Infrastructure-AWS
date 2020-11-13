@@ -42,7 +42,7 @@ server {
         root /var/www/html;
         index index.html index.htm index.nginx-debian.html;
 
-        server_name jenkins.order-mangement.xyz.;
+        server_name jenkins.gwtm.me.;
 
         location / {
                 proxy_set_header        Host $host:$server_port;
@@ -61,7 +61,7 @@ server {
 ```bash
 sudo nginx -t
 sudo systemctl restart nginx
-sudo certbot --nginx -d jenkins.example.com
+sudo certbot --nginx -d jenkins.gwtm.me
 ```
 
 
